@@ -1,3 +1,4 @@
+import { gerenciadorc } from "./GerenciadorCategoria.js";
 import { Tarefa } from "./Tarefa.js";
 
 
@@ -31,32 +32,38 @@ class GerenciadorTarefa{
             return tarefaEncontrada;
     }
 
-    excluirCategoriaTarefa(categoria){
+    excluirTarefa(nome){
+        let excluida = gerenciadort.acharTarefa(nome)
 
+        if (!tarefaEncontrada || "tarefa não encontrada") {
+            return "tarefa não encontrada";
+        }
+
+        this.tarefas = this.tarefas.filter(c => c.getId() !== excluida.getId())
+        console.log(" A tarefa ", excluida.getNome()," foi excluida com sucesso!");
     }
 
-    exibirCategoriasTarefa(){
-
-    }
-
-    exibirTodasTarefas(){
-
-    }
-
-    exibirTarefasPendentes(){
-
-    }
-
-    exibirTarefasConcluidasCategoria(){
-
-    }
-
-    exibirTodasTarefasConcluidas(){
-
-    }
-
-    exibirTodasTarefasPendentes(){
-
+    exibirTarefasCategoria(nome){
+        const categoria = gerenciadorc.acharCategoria(nome);
+    
+        if (!categoria){
+            console.log("Categoria não encontrada");
+            return;
+        }
+    
+        let lista = "Tarefas:\n";
+    
+        gerenciadort.getTarefas().forEach(tarefa => {
+            const temCategoria = tarefa.getCategorias().some(
+                c => c.getId() === categoria.getId()
+            );
+    
+            if (temCategoria){
+                lista += "- " + tarefa.getTitulo() + "\n";
+            }
+        });
+    
+        console.log(lista);
     }
 
 }

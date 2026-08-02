@@ -53,7 +53,7 @@ export class Tarefa {
     }
   
     excluirCategoriaTarefa(categoria) {
-        this.categorias = this.categorias.filter(c => c !== categoria);
+        this.categorias = this.categorias.filter(c => c.getId() !== categoria.getId());
     }
   
     alterarStatus() {

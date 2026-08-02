@@ -15,10 +15,18 @@ gerenciadort.criarTarefa("limpar");
 
 gerenciadorc.criarCategoria("estudos");
 
-gerenciadort.acharTarefa("limpar").adicionarCategoriaTarefa("estudo")
+gerenciadort.acharTarefa("limpar").adicionarCategoriaTarefa("estudos")
+
+console.log("lista de Categorias: ", gerenciadorc.getCategorias())
+
+console.log("Tudo certo")
+
+console.log(gerenciadorc.acharCategoria("estudos"))
+
+gerenciadorc.criarCategoria("matematica");
+gerenciadorc.criarCategoria("ingles");
+gerenciadorc.criarCategoria("fisica");
 
 console.log(gerenciadort.acharTarefa("limpar"))
 
-gerenciadorc.editarCategoria("estudos","Trabalho")
-
-console.log(gerenciadorc.acharCategoria("Trabalho"))
+gerenciadort.exibirTarefasCategoria("estudos")
