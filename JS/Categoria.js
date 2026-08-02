@@ -1,11 +1,8 @@
-
-let categorias = [];
-let proximoId = 0;
-
+export let proximoId = 1;
 
 export class Categoria {
 
-    constructor(id, nome) {
+    constructor(nome) {
         this.id = proximoId ++;
         this.nome = nome;
     }
@@ -17,17 +14,6 @@ export class Categoria {
     }
     setNome(novoNome){
         this.nome = novoNome;
-    }
-
-
-    editarCategoria(categoria){
-
-    }
-    excluirCategoria(categoria){
-
-    }
-    exibirCategorias(){
-
     }
 
 }

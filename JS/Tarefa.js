@@ -1,11 +1,13 @@
+import { gerenciadorc } from "./GerenciadorCategoria.js"
 
-let tarefas = [];
+
+
+export let proximoId = 1;
 
 export class Tarefa {
 
-    constructor(id, titulo, status = false, categorias = []) {
+    constructor(titulo, status = false, categorias = []) {
         this.id = proximoId++;
-        this.id = id;
         this.titulo = titulo;
         this.status = status;
         this.categorias = categorias;
@@ -38,9 +40,16 @@ export class Tarefa {
     getCategorias() {
         return this.categorias;
     }
-  
-    adicionarCategoriaTarefa(categoria) {
-        this.categorias.push(categoria);
+
+    adicionarCategoriaTarefa(nome) {
+        let novaCategoria = gerenciadorc.acharCategoria(nome);
+
+        if (!novaCategoria){
+            console.log("Categoria não encontrada");
+        }else{
+            this.categorias.push(novaCategoria);
+            console.log("Categoria: ",novaCategoria," foi adicionada na tarefa com sucesso!");
+        }
     }
   
     excluirCategoriaTarefa(categoria) {
