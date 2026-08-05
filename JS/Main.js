@@ -9,7 +9,7 @@ let categories = [
     },
     {
       title: "Freios",
-      img: "wrench.png",
+      img: "wheel.png",
     },
     {
       title: "Corrente",
@@ -389,6 +389,8 @@ let categories = [
   const addBtn = document.querySelector(".add-btn");
   const cancelBtn = document.querySelector(".cancel-btn");
   const totalReparos = document.getElementById("total-reparos");
+    const themeBtn = document.querySelector(".theme-btn");
+
   
   // Attach event listeners
   menuBtn.addEventListener("click", toggleScreen);
@@ -397,6 +399,9 @@ let categories = [
   blackBackdrop.addEventListener("click", toggleAddReparoForm);
   addBtn.addEventListener("click", addReparo);
   cancelBtn.addEventListener("click", toggleAddReparoForm);
+  themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+  });
   
   // Render initial state
   getLocal();
