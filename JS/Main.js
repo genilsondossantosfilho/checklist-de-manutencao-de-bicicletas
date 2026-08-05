@@ -1,35 +1,35 @@
 let categories = [
     {
       title: "Personal",
-      img: "boy.png",
+      img: "bike.png",
     },
     {
-      title: "Work",
-      img: "briefcase.png",
+      title: "Rodas",
+      img: "wheel.png",
     },
     {
-      title: "Shopping",
-      img: "shopping.png",
+      title: "Freios",
+      img: "wrench.png",
     },
     {
-      title: "Coding",
-      img: "web-design.png",
+      title: "Corrente",
+      img: "bike.png",
     },
     {
-      title: "Health",
-      img: "healthcare.png",
+      title: "Elétrica",
+      img: "wrench.png",
     },
     {
-      title: "Fitness",
-      img: "dumbbell.png",
+      title: "Suspensão",
+      img: "wheel.png",
     },
     {
-      title: "Education",
-      img: "education.png",
+      title: "Geral",
+      img: "wheel.png",
     },
     {
-      title: "Finance",
-      img: "saving.png",
+      title: "Acessórios",
+      img: "bike.png",
     },
   ];
   
@@ -271,7 +271,7 @@ let categories = [
         reparo.category.toLowerCase() === selectedCategory.title.toLowerCase()
     );
     if (categoryReparos.length === 0) {
-      reparosContainer.innerHTML = `<p class="no-reparos">No reparos added for this category</p>`;
+      reparosContainer.innerHTML = `<p class="no-reparos">Não ha reparos para essa categoria</p>`;
     } else {
       categoryReparos.forEach((reparo) => {
         const div = document.createElement("div");
@@ -355,7 +355,7 @@ let categories = [
     const category = categorySelect.value;
   
     if (reparo === "") {
-      alert("Please enter a reparo");
+      alert("Por favor adicione um reparo");
     } else {
       const newReparo = {
         id: reparos.length + 1,
