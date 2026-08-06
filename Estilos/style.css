@@ -115,7 +115,7 @@ body {
 }
 
 .categories-wrapper {
-    margin-top: 11rem;
+    margin-top: 5rem;
     padding: 0 30px;
     height: calc(100% - 8rem);
     padding-bottom: 200px;
@@ -223,7 +223,6 @@ body {
     opacity: 0.6;
 }
 
-/* reparos */
 .reparos-wrapper {
     padding: 0 30px;
     margin-top: 1rem;
@@ -331,7 +330,6 @@ body {
     opacity: 0.6;
 }
 
-/* Add Reparo */
 .add-reparo-btn {
     position: absolute;
     bottom: 1rem;
@@ -489,6 +487,11 @@ body.dark-theme {
     color: #f5f5f5;
 }
 
+body.dark-theme .categories-wrapper {
+    background-image: none;
+    background-color: #121212;
+}
+
 body.dark-theme .category {
     background: #1e1e1e;
 }
@@ -516,3 +519,34 @@ body.dark-theme .input-group label {
     color: #f5f5f5;
 }
 
+.form-nova-area {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.form-nova-area input {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0.4rem ;
+    font-size: 0.8rem;
+    background-color: #ffffff;
+}
+.form-nova-area select {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0.4rem;
+    font-size: 0.75rem;
+    background-color: #ffffff;
+    max-width: 6rem;
+}
+.form-nova-area button {
+    width: 2.2rem;
+    border-radius: 8px;
+    background-color: #1c2b2e;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

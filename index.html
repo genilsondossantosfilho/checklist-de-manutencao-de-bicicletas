@@ -10,7 +10,7 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#2d89ef" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="Estilos/style.css" />
+    <link rel="stylesheet" href="estilos/style.css" />
     <title>Checklist de Manutenção de Bicicletas</title>
     <meta
       name="description"
@@ -87,6 +87,25 @@
           </div>
         </div>
         <div class="categories-wrapper">
+
+          <div class="areas-cabecalho">
+            <h2>Áreas da bicicleta</h2>
+          </div>
+  
+          <form class="form-nova-area" id="form-nova-area">
+            <input type="text" id="nova-area-input" placeholder="Nova categoritia" maxlength="30" wfd-id="id0">
+            <select id="nova-area-icone">
+                <option value="wrench">Geral</option>
+                <option value="wheel">Roda</option>
+                <option value="brake">Freio</option>
+                <option value="chain">Corrente</option>
+                <option value="frame">Quadro</option>
+                <option value="lights">Elétrica</option>
+                <option value="lube">Lubrificação</option>
+            </select>
+            <button type="submit" aria-label="Adicionar área">+</button>
+        </form>
+
           <div class="categories">
             <div class="category">
               <div class="left">
@@ -223,6 +242,6 @@
       </div>
     </div>
 
-    <script src="JS/Main.js"></script>
+    <script src="js/Main.js"></script>
   </body>
 </html>
