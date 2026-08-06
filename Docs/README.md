@@ -75,7 +75,8 @@ Uma das difficuldades encontradas no projeto foi durante a implementação da op
 
 # Link para demonstração
 
-> Link para o video mostrando o app funcionando no youtube: 
+> Link para o video mostrando o app funcionando no youtube:  https://youtu.be/BxgQ6FDyqVE?si=PtPC_318VOBH1aJW
+
 
 > Link para o GithubPages: `https://<usuario>.github.io/<repositorio>/`
 
