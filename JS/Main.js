@@ -446,14 +446,14 @@ const blackBackdrop = document.querySelector(".black-backdrop");
 const addBtn = document.querySelector(".add-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const totalReparos = document.getElementById("total-reparos");
-  const themeBtn = document.querySelector(".theme-btn");
+const themeBtn = document.querySelector(".theme-btn");
 const formNovaArea = document.getElementById("form-nova-area");
 const novaAreaInput = document.getElementById("nova-area-input");
 const novaAreaIcone = document.getElementById("nova-area-icone");
 
 
 
-  menuBtn.addEventListener("click", toggleScreen);
+menuBtn.addEventListener("click", toggleScreen);
 backBtn.addEventListener("click", toggleScreen);
 addReparoBtn.addEventListener("click", toggleAddReparoForm);
 blackBackdrop.addEventListener("click", toggleAddReparoForm);
