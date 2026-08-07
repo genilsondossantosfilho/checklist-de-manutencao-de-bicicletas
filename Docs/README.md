@@ -78,5 +78,5 @@ Uma das difficuldades encontradas no projeto foi durante a implementação da op
 > Link para o video mostrando o app funcionando no youtube:  https://youtu.be/BxgQ6FDyqVE?si=PtPC_318VOBH1aJW
 
 
-> Link para o GithubPages: `https://<usuario>.github.io/<repositorio>/`
+> Link para o GithubPages:  https://genilsondossantosfilho.github.io/checklist-de-manutencao-de-bicicletas/
 
